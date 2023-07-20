@@ -1,0 +1,121 @@
+@import 'mixin';
+
+
+#service{
+    .service-item{
+
+        .pos-text{
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+
+            h4{
+                font-size: 28px;
+                color: hsl(167, 40%, 24%);
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+                padding-bottom: 30px;
+                
+            }
+            .sec-head{
+                color: hsl(198, 62%, 26%);
+                
+            }
+            p{
+                font-family: 'Barlow', sans-serif;
+                font-size: 17px;
+                color: hsl(167, 39%, 32%);
+                font-weight: 600;
+                padding: 0 160px;
+                
+            }
+            .sec-p{
+                color: hsl(198, 60%, 32%);
+                
+            }
+        }
+        
+        .service-text{
+            padding: 160px 0 0 160px;
+
+            h4{
+                font-size: 40px;
+                color: hsl(212, 27%, 19%);
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+                padding-right: 75px;
+                
+            }
+            p{
+                font-family: 'Barlow', sans-serif;
+                font-size: 18px;
+                color: hsl(232, 10%, 55%);
+                font-weight: 600;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                padding-right: 80px;
+                
+            }
+            
+            .cta-btn{
+                color: hsl(212, 27%, 19%);
+                font-family: 'Fraunces', serif;
+                font-weight: 800;
+                margin-left: 10px;
+                position: relative;
+                z-index: 1;
+                &::after{
+                    content: '';
+                    width: 120%;
+                    height: 0;
+                    background: hsl(51, 100%, 49%);
+                    position: absolute;
+                    bottom: 0;
+                    left: -10px;
+                    z-index: -1;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    @include trans2(0.3s);
+                }
+                &:hover{
+                    &::after{
+                        height: 10px;
+                    }
+                }
+            }
+            
+            .cta-btn1{
+                color: hsl(212, 27%, 19%);
+                font-family: 'Fraunces', serif;
+                font-weight: 800;
+                margin-left: 10px;
+                position: relative;
+                z-index: 1;
+                &::before{
+                    content: '';
+                    width: 120%;
+                    height: 0;
+                    background: hsl(7, 99%, 70%);
+                    position: absolute;
+                    bottom: 0;
+                    left: -10px;
+                    z-index: -1;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    @include trans2(0.3s);
+                }
+                &:hover{
+                    &::before{
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

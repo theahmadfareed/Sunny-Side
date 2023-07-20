@@ -1,0 +1,48 @@
+@import "mixin";
+
+footer {
+  background: #90d4c5;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  h2 {
+    font-size: 34px;
+    font-family: "Poppins", sans-serif;
+    color: hsl(167, 40%, 24%);
+    font-weight: 800;
+    padding-bottom: 40px;
+  }
+  ul {
+    li {
+      margin: 0 30px !important;
+      a {
+        font-family: "Barlow", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: #237260;
+
+        &:hover {
+          color: #fff;
+        }
+        @include trans1(0.2s);
+      }
+    }
+  }
+  .social-links {
+    .s-link {
+      margin-right: 25px;
+      i {
+        margin-top: 40px;
+        font-size: 24px;
+        color: #1c6353;
+
+        &:hover {
+          color: #fff;
+        }
+        @include trans1(0.2s);
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

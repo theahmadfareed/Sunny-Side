@@ -1,0 +1,52 @@
+@import 'mixin';
+
+.navbar{
+    line-height: 90px;
+    z-index: 999999;
+
+    .navbar-pd{
+        
+        padding: 0 10px;
+        
+        
+        .navbar-brand{
+            font-size: 34px;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            font-weight: 800;
+        }
+        .navbar-nav{
+    
+            .nav-item{
+                text-align: center;
+                width: 110px;
+                line-height: 50px;
+                text-transform: capitalize;
+                font-weight: 600;
+                
+                
+                a{
+                    padding: 0;
+                    color: #fff;
+                    font-size: 18px;
+                    font-family: 'Barlow', sans-serif;
+
+                    &.active{
+                        color: #fff;
+                    }
+                }
+                border-radius: 50px;
+                -webkit-border-radius: 50px;
+                -moz-border-radius: 50px;
+                -ms-border-radius: 50px;
+                -o-border-radius: 50px;
+                @include trans1(0.3s);
+    
+                &:hover{
+                    background: rgba(255, 255, 255, 0.3);
+                }
+            }
+        }
+    }
+    
+}

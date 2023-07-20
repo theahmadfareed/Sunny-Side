@@ -1,0 +1,58 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+
+  /* ==================   common css    ================= */ 
+
+  /* =============   back to top   starts     ================= */
+  .back-to-top{
+    display: none;
+
+}
+.back-to-top i{
+  font-size: 45px;
+  color: #fbb000;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  z-index: 9999999;
+  cursor: pointer;
+}
+/* =============   back to top   ends     ================= */
+
+/* =============   navfix starts     ================= */
+
+.nav-fix{
+  line-height: 70px !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  background: rgba(251, 176, 0, 0.7);
+  animation: navron 1s linear;
+  -webkit-animation: navron 1s linear;
+}
+@keyframes navron{
+  0%{
+    top: -70px;
+  }
+  100%{
+    top: 0;
+  }
+}
+/* =============   navfix   ends     ================= */

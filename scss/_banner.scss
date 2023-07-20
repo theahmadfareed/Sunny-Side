@@ -1,0 +1,22 @@
+#banner{
+    background: url(../images/desktop/image-header.jpg) no-repeat center / cover;
+    height: 100vh;
+    .banner-bg{
+
+        h1{
+            font-size: 55px;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 7px;
+            padding-top: 185px;
+            text-transform: uppercase;
+            font-family: 'Fraunces', serif;
+
+        }
+        i{
+            color: #fff;
+            font-size: 110px;
+            margin-top: 50px;
+        }
+    }
+}
